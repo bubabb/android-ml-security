@@ -1,0 +1,7 @@
+apk,package,sha256_prefix,apk_size_mb,smali_scanned,smali_total,n_model_artifacts,n_native_libs,ml_sdks,n_sensitive_perms,n_poisoning_surfaces,critical,high,medium,info,top_finding
+aves.apk,deckers.thibault.aves.libre,75697b19f2eb850f,55.9,5000,6692,0,0,,3,0,0,0,0,1,No on-device ML artifacts detected
+fdroid.apk,org.fdroid.fdroid,985f5181d48bb6ba,12.4,5000,19701,0,0,,4,0,0,0,0,1,No on-device ML artifacts detected
+fennec.apk,org.mozilla.fennec_fdroid,251146a2b5f6d801,117.6,5000,33385,0,0,,6,0,0,0,0,1,No on-device ML artifacts detected
+newpipe.apk,org.schabi.newpipe,dbc8a1bb7a3db16f,10.9,5000,8540,0,0,,2,0,0,0,0,1,No on-device ML artifacts detected
+nextcloud.apk,com.nextcloud.client,e36e6ef4215cf003,77.8,5000,46547,0,0,,5,0,0,0,0,1,No on-device ML artifacts detected
+positive_control.apk,,d9c71359fcce2d5f,15.7,0,0,1,0,,0,0,0,1,0,0,Model artifact at assets/mobilenet_v1.tflite

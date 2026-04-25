@@ -1,0 +1,42 @@
+{
+  "package": "org.fdroid.fdroid",
+  "apk_path": "apks/all/fdroid.apk",
+  "apk_size_bytes": 12426276,
+  "apk_sha256": "985f5181d48bb6bafd54083a048b391271e0ab28385881cc41294fb01a222762",
+  "ml_artifacts": [],
+  "ml_native_libs": [],
+  "ml_sdks": [],
+  "sensitive_permissions": [
+    {
+      "permission": "android.permission.CAMERA",
+      "relevance": "Visual PII input to ML"
+    },
+    {
+      "permission": "android.permission.INTERNET",
+      "relevance": "Network (may be used for model updates)"
+    },
+    {
+      "permission": "android.permission.WRITE_EXTERNAL_STORAGE",
+      "relevance": "Model persistence to external storage"
+    },
+    {
+      "permission": "android.permission.READ_EXTERNAL_STORAGE",
+      "relevance": "File access (may include model caches)"
+    }
+  ],
+  "poisoning_surfaces": [],
+  "findings": [
+    {
+      "category": "Model Exposure",
+      "severity": "Info",
+      "title": "No on-device ML artifacts detected",
+      "detail": "App contains no model files, ML native libraries, or ML-SDK Smali references. Valid negative finding under the stated threat model \u2014 app is outside the Truth Serum attack surface.",
+      "evidence": []
+    }
+  ],
+  "notes": [
+    "smali scan truncated: 19701 files found, scanning first 5000. Increase SMALI_SCAN_CAP for full coverage on large apps."
+  ],
+  "smali_files_scanned": 5000,
+  "smali_files_total": 19701
+}

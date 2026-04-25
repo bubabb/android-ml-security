@@ -1,0 +1,38 @@
+{
+  "package": "",
+  "apk_path": "apks/all/positive_control.apk",
+  "apk_size_bytes": 15683792,
+  "apk_sha256": "d9c71359fcce2d5f1d25699a269149764f2f5f6d1e31d26397019cea08edf07e",
+  "ml_artifacts": [
+    {
+      "path": "assets/mobilenet_v1.tflite",
+      "size": 16901128,
+      "entropy": 7.428,
+      "magic": "tflite",
+      "high_entropy": false,
+      "high_entropy_note": "High entropy is consistent with encryption OR compression; the two are indistinguishable from a file's bytes alone.",
+      "format_identified": true
+    }
+  ],
+  "ml_native_libs": [],
+  "ml_sdks": [],
+  "sensitive_permissions": [],
+  "poisoning_surfaces": [],
+  "findings": [
+    {
+      "category": "Model Exposure",
+      "severity": "High",
+      "title": "Model artifact at assets/mobilenet_v1.tflite",
+      "detail": "Model file present in APK with identifiable format ('tflite'). Unencrypted; architecture and weights are readable by anyone who can unzip the APK. No integrity check is enforced by the APK loader.",
+      "evidence": [
+        "size=16901128 bytes",
+        "entropy=7.428"
+      ]
+    }
+  ],
+  "notes": [
+    "apktool decode failed or timed out"
+  ],
+  "smali_files_scanned": 0,
+  "smali_files_total": 0
+}

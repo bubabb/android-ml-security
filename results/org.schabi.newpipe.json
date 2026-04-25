@@ -1,0 +1,34 @@
+{
+  "package": "org.schabi.newpipe",
+  "apk_path": "apks/all/newpipe.apk",
+  "apk_size_bytes": 10881466,
+  "apk_sha256": "dbc8a1bb7a3db16f1d2fa9f96157171cc80453d1ff6e51108e73c007ea05cf87",
+  "ml_artifacts": [],
+  "ml_native_libs": [],
+  "ml_sdks": [],
+  "sensitive_permissions": [
+    {
+      "permission": "android.permission.INTERNET",
+      "relevance": "Network (may be used for model updates)"
+    },
+    {
+      "permission": "android.permission.WRITE_EXTERNAL_STORAGE",
+      "relevance": "Model persistence to external storage"
+    }
+  ],
+  "poisoning_surfaces": [],
+  "findings": [
+    {
+      "category": "Model Exposure",
+      "severity": "Info",
+      "title": "No on-device ML artifacts detected",
+      "detail": "App contains no model files, ML native libraries, or ML-SDK Smali references. Valid negative finding under the stated threat model \u2014 app is outside the Truth Serum attack surface.",
+      "evidence": []
+    }
+  ],
+  "notes": [
+    "smali scan truncated: 8540 files found, scanning first 5000. Increase SMALI_SCAN_CAP for full coverage on large apps."
+  ],
+  "smali_files_scanned": 5000,
+  "smali_files_total": 8540
+}

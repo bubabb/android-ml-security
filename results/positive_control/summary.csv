@@ -1,0 +1,2 @@
+apk,package,sha256_prefix,apk_size_mb,smali_scanned,smali_total,n_model_artifacts,n_native_libs,ml_sdks,n_sensitive_perms,n_poisoning_surfaces,critical,high,medium,info,top_finding
+positive_control.apk,,d9c71359fcce2d5f,15.7,0,0,1,0,,0,0,0,1,0,0,Model artifact at assets/mobilenet_v1.tflite

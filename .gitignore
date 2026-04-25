@@ -1,0 +1,27 @@
+# Large data — too big for GitHub
+apks/
+decompiled/
+logs/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+.venv/
+venv/
+
+# LaTeX build artefacts
+*.aux
+*.log
+*.out
+*.toc
+*.bbl
+*.blg
+*.synctex.gz
+
+# OS / editor
+.DS_Store
+.idea/
+.vscode/
+*.swp

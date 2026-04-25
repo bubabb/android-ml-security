@@ -1,0 +1,50 @@
+{
+  "package": "org.mozilla.fennec_fdroid",
+  "apk_path": "apks/all/fennec.apk",
+  "apk_size_bytes": 117605680,
+  "apk_sha256": "251146a2b5f6d8018025262918ebfe1540c8d17cace58e709f197bbf97b3d9fa",
+  "ml_artifacts": [],
+  "ml_native_libs": [],
+  "ml_sdks": [],
+  "sensitive_permissions": [
+    {
+      "permission": "android.permission.RECORD_AUDIO",
+      "relevance": "Audio PII input to ML"
+    },
+    {
+      "permission": "android.permission.CAMERA",
+      "relevance": "Visual PII input to ML"
+    },
+    {
+      "permission": "android.permission.ACCESS_FINE_LOCATION",
+      "relevance": "Location PII"
+    },
+    {
+      "permission": "android.permission.INTERNET",
+      "relevance": "Network (may be used for model updates)"
+    },
+    {
+      "permission": "android.permission.WRITE_EXTERNAL_STORAGE",
+      "relevance": "Model persistence to external storage"
+    },
+    {
+      "permission": "android.permission.READ_EXTERNAL_STORAGE",
+      "relevance": "File access (may include model caches)"
+    }
+  ],
+  "poisoning_surfaces": [],
+  "findings": [
+    {
+      "category": "Model Exposure",
+      "severity": "Info",
+      "title": "No on-device ML artifacts detected",
+      "detail": "App contains no model files, ML native libraries, or ML-SDK Smali references. Valid negative finding under the stated threat model \u2014 app is outside the Truth Serum attack surface.",
+      "evidence": []
+    }
+  ],
+  "notes": [
+    "smali scan truncated: 33385 files found, scanning first 5000. Increase SMALI_SCAN_CAP for full coverage on large apps."
+  ],
+  "smali_files_scanned": 5000,
+  "smali_files_total": 33385
+}
